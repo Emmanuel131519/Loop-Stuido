@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --White: hsl(0, 0%, 100%);
+    --Black: hsl(0, 0%, 0%);
+    --Grey-200: hsl(0, 0%, 85%);
+    --ff-alata: 'Alata', sans-serif;
+    --ff-josefin: 'Josefin Sans', sans-serif;
+}
+
+body{
+   min-height: 100vh;
+   font-size: 15px;
+   overflow: hidden;
+}
+
+ul{
+    list-style: none;
+}
+
+
+
+.container{
+   /* border: 2px solid blue; */
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 100px;
+}
+
+header{
+    background-image: url(assets/desktop/girl-w-vr-goggles.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+min-height: 36rem;
+padding-bottom: 2rem;
+}
+
+/* nav */
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 0;
+}
+
+ul{
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    color: var(--White);
+    font-family: var(--ff-alata);
+    font-weight: 400;
+}
+
+#hamburger-icon-container{
+    display: none;
+}
+
+ul li{
+    color: var(--White);
+    position: relative;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    padding: 0.25rem 0;
+}
+
+ul li::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 58%;
+    height: 2px;
+    width: 0;
+    background-color: var(--White);
+    transition: width 0.3s ease;
+    transform: translateX(-50%);
+}
+
+ul li:hover::after{
+    width: 50%;
+}
+
+#immersive{
+    width: 80%;
+    margin: 60px 0;
+}
+
+#immersive h1{
+border: 3px solid var(--White) ;
+font-family: var(--ff-josefin);
+font-weight: 300;
+color: var(--White);
+width: 50%;
+font-size: 3.3rem;
+word-wrap: break-word;
+padding: 1rem 2rem;
+}
+
+@media(max-width: 768px){
+    .container{
+        max-width: 1100px;
+        padding: 0 18px;
+    }
+
+    header{
+        background-image: url(assets/mobile/girl-with-vr-goggles.jpg);
+        min-height: 40rem;
+    }
+
+    nav ul{
+        display: none;
+    }
+
+    #hamburger-icon-container{
+        display: block;
+        width: 10%;
+    }
+
+    #hamburger-icon-container img{
+        width: 100%;
+    }
+
+    #immersive{
+        width: 100%;
+    }
+
+    #immersive h1{
+    width: 100%;
+    font-size: 2.5rem;
+    }
+
+}
