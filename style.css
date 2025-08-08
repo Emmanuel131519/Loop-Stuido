@@ -16,7 +16,7 @@
 body{
    min-height: 100vh;
    font-size: 15px;
-   overflow: hidden;
+overflow-x: hidden;
 }
 
 ul{
@@ -101,6 +101,47 @@ word-wrap: break-word;
 padding: 1rem 2rem;
 }
 
+/* main */
+main{
+    padding: 100px 0;
+}
+
+#interactive-mobile{
+    display: none;
+}
+
+#section-1{
+    position: relative;
+}
+
+#text-div{
+    position: absolute;
+left: 658px;
+bottom: 4px;
+height: 300px;
+max-width: 50%;
+display: flex;
+flex-direction: column;
+justify-content: end;
+word-wrap: break-word;
+padding: 20px 60px 0 60px;
+background-color: var(--White);
+}
+
+#text-div h1{
+    font-family: var(--ff-josefin);
+    font-weight: 300;
+    font-size: 3rem;
+}
+
+#text-div p{
+    font-family: var(--ff-alata);
+    font-weight: 400;
+color: rgb(165, 164, 164);
+line-height: 2;
+}
+
+
 @media(max-width: 768px){
     .container{
         max-width: 1100px;
@@ -133,5 +174,40 @@ padding: 1rem 2rem;
     width: 100%;
     font-size: 2.5rem;
     }
+
+    /* main */
+    /* section-1 */
+#interactive-mobile{
+    display: block;
+   max-width: 100%;
+}
+
+#interactive-desktop{
+    display: none;
+}
+
+#text-div{
+    position: static;
+    max-width: 100%;
+    text-align: center;
+padding: 0;
+}
+
+#text-div h1{
+    font-family: var(--ff-josefin);
+    font-weight: 300;
+    font-size: 3rem;
+}
+
+#text-div h1 {
+font-size: 2.4rem;
+}
+
+#text-div p{
+line-height: 1.6;
+    color: rgb(165, 164, 164);
+    padding-top: 20px;
+
+}
 
 }
