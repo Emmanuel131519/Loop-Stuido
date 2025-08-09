@@ -141,6 +141,102 @@ color: rgb(165, 164, 164);
 line-height: 2;
 }
 
+/* section-2 */
+
+#section-2{
+    padding-top: 140px;
+}
+
+#div-for-creations{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+#div-for-creations h1{
+    font-family: var(--ff-josefin);
+    font-weight: 300;
+    font-size: 2.2rem;
+}
+
+#desktop-btn{
+    border: 1.5px solid var(--Black);
+    padding: 10px 50px;
+    font-family: var(--ff-alata);
+    font-weight: 400;
+    letter-spacing: 4px;
+}
+
+#desktop-btn:hover{
+    cursor: pointer;
+    background-color: var(--Black);
+    color: var(--White);
+}
+
+#mobile-btn{
+    display: none;
+}
+
+/* grid layout */
+#creations-div {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+    padding: 60px 0;
+}
+
+.creation-card{
+    height: 500px;
+    display: flex;
+    align-items: flex-end;
+    padding: 1rem;
+    text-transform: uppercase;
+    font-family: var(--ff-josefin);
+    font-weight: 400;
+    transition: transform 0.3s ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: var(--White);
+}
+
+.creation-card p{
+    max-width: 60%;
+    font-size: 1.5rem;
+    padding-left: 20px;
+}
+
+#deep-earth{
+    background-image: url(assets/desktop/earth-img.jpg);
+
+}
+
+#night-arcade{
+background-image: url(assets/desktop/number100-img.jpg);
+}
+
+#soccer-team-vr{
+    background-image: url(assets/desktop/person-running.jpg);
+}
+
+#the-grid{
+    background-image: url(assets/desktop/car-with-mobil-img.jpg);
+}
+
+#above-vr{
+    background-image: url(assets/desktop/waves-img.jpg);
+}
+
+#pocket-borealis{
+    background-image: url(assets/desktop/green-light-in-sky-img.jpg);
+}
+
+#the-curiosity{
+    background-image: url(assets/desktop/space-bot-img.jpg);
+}
+
+#fisheye{
+    background-image: url(assets/desktop/waves-img-2.jpg);
+}
+
 
 @media(max-width: 768px){
     .container{
@@ -208,6 +304,19 @@ line-height: 1.6;
     color: rgb(165, 164, 164);
     padding-top: 20px;
 
+}
+
+/* section-2 */
+
+#section-2{
+    padding-top: 60px;
+}
+
+#desktop-btn{
+    display: none;
+}
+#div-for-creations{
+    justify-content: center;
 }
 
 }
