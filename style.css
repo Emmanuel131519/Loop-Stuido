@@ -198,10 +198,19 @@ line-height: 2;
     color: var(--White);
 }
 
+.creation-card:hover{
+    transform: scale(1.02);
+    opacity: 50%;
+    cursor: pointer;
+    color: var(--Black);
+}
+
 .creation-card p{
-    max-width: 60%;
+    /* max-width: 55%; */
     font-size: 1.5rem;
     padding-left: 20px;
+    font-weight: 300;
+    color: var(--Grey-200);
 }
 
 #deep-earth{
@@ -215,6 +224,7 @@ background-image: url(assets/desktop/number100-img.jpg);
 
 #soccer-team-vr{
     background-image: url(assets/desktop/person-running.jpg);
+    background: linear-gradient(to bottom, black);
 }
 
 #the-grid{
@@ -235,6 +245,22 @@ background-image: url(assets/desktop/number100-img.jpg);
 
 #fisheye{
     background-image: url(assets/desktop/waves-img-2.jpg);
+}
+.mobile-btn{
+    display: none;
+}
+
+footer{
+    background-color: var(--Black);
+    padding: 50px 0;
+}
+
+#footer-inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--White);
+    flex-wrap: wrap;
 }
 
 
@@ -319,4 +345,70 @@ line-height: 1.6;
     justify-content: center;
 }
 
+/* Grid Layout */
+
+#creations-div{
+    grid-template-columns: 1fr;
+    gap: 1rem;
+
+}
+.creation-card{
+    height: 120px;
+}
+
+#deep-earth{
+    background-image: url(assets/mobile/earth-img.jpg);
+
+}
+
+#night-arcade{
+background-image: url(assets/mobile/number-1000-img.jpg);
+}
+
+#soccer-team-vr{
+    background-image: url(assets/mobile/person-running-img.jpg);
+}
+
+#the-grid{
+    background-image: url(assets/mobile/car-with-mobil-img.jpg);
+}
+
+#above-vr{
+    background-image: url(assets/mobile/green-light-in-sky-img.jpg);
+}
+
+#pocket-borealis{
+  
+        background-image: url(assets/mobile/roads-img.jpg);
+}
+
+#the-curiosity{
+    background-image: url(assets/mobile/space-bot.jpg);
+}
+
+#fisheye{
+  background-image: url(assets/mobile/water-waves-img.jpg);
+}
+
+.mobile-btn{
+    display: block;
+        border: 1.5px solid var(--Black);
+    padding: 10px 50px;
+    font-family: var(--ff-alata);
+    font-weight: 400;
+    letter-spacing: 4px;
+}
+
+.creation-card:hover{
+    transform: none;
+    /* opacity: 100%; */
+    cursor: none;
+    color: white;
+}
+
+.creation-card p{
+    max-width: 31% ;
+    font-size: 1.3rem;
+    padding-left: 0;
+}
 }
